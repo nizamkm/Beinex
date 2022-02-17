@@ -17,9 +17,9 @@ export class BankService {
 
   constructor(private http: HttpClient) { }
 
-  getData(){
+  getData(data:any){
     let baseUrl="https://vast-shore-74260.herokuapp.com/banks?city=MUMBAI"
-    return this.http.get(baseUrl)
+    return this.http.get(data)
   }
 
   // private handleError(err: HttpErrorResponse) {

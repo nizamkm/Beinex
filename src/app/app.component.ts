@@ -9,10 +9,7 @@ import { BankService } from './bank.service';
 export class AppComponent {
   title = 'bankbranches';
   data=[]
-  constructor(private user:BankService){
-    this.user.getData().subscribe((data: any)=>{
-      console.log(data)
-      this.data=data
-    })
+  constructor(){
+    
   }
 }

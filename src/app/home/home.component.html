@@ -9,8 +9,7 @@
                 [(ngModel)]="searchString" >
         </form>
     </div>
-
-    <div class="table">
+        <div class="table">
         <table>
             <tr>
                 <th>BANK NAME</th>
@@ -23,14 +22,14 @@
                 <th>STATE</th>
             </tr>
             <tr style="align-self: center" *ngFor="let native of nativeBranch">
-                <td>{{item.bank_name}}</td>
-                <td>{{item.ifsc}}</td>
-                <td>{{item.branch}}</td>
-                <td>{{item.bank_id}}</td>
-                <td>{{item.address}}</td>
-                <td>{{item.city}}</td>
-                <td>{{item.district}}</td>
-                <td>{{item.state}}</td>
+                <td>{{native.bank_name}}</td>
+                <td>{{native.ifsc}}</td>
+                <td>{{native.branch}}</td>
+                <td>{{native.bank_id}}</td>
+                <td>{{native.address}}</td>
+                <td>{{native.city}}</td>
+                <td>{{native.district}}</td>
+                <td>{{native.state}}</td>
             </tr>
         </table>
     </div>
