@@ -1,0 +1,41 @@
+<div class="main">
+    <div class="header">
+        <h1>BANK BRANCHES</h1>
+    </div>
+
+    <div class="container">
+        <form>
+            <input type="text"  placeholder="TYPE TO SEARCH..."
+                [(ngModel)]="searchString" >
+        </form>
+    </div>
+
+    <div class="table">
+        <table>
+            <tr>
+                <th>BANK NAME</th>
+                <th>IFSC</th>
+                <th>BRANCH</th>
+                <th>BANK ID</th>
+                <th>ADDRESS</th>
+                <th>CITY</th>
+                <th>DISTRICT</th>
+                <th>STATE</th>
+            </tr>
+            <tr style="align-self: center" *ngFor="let native of nativeBranch">
+                <td>{{item.bank_name}}</td>
+                <td>{{item.ifsc}}</td>
+                <td>{{item.branch}}</td>
+                <td>{{item.bank_id}}</td>
+                <td>{{item.address}}</td>
+                <td>{{item.city}}</td>
+                <td>{{item.district}}</td>
+                <td>{{item.state}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>© 2022 Copyright</p>
+    </div>
+</div>
