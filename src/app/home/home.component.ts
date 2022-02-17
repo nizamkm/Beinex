@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BankService } from '../bank.service';
 import { Router } from '@angular/router';
-import { FormGroup,FormBuilder} from '@angular/forms';
 
 
 
@@ -20,7 +19,6 @@ export class HomeComponent implements OnInit {
 
   constructor(public bankService : BankService,private router:Router) {
     
-    // console.log('Home component constructor is called');
   }
 
   ngOnInit(): void {this.query={
@@ -41,20 +39,7 @@ getDatalist(data:any){
 
 
 
-    // console.log('Home component onIniti called');
-
-    //   this.bankService.getData().subscribe(
-    //     (         data: any)=>{
-    //         console.log('logging data');
-    //         console.log(data);
-    //         this.nativeBranch = data;
-    //         console.log(this.nativeBranch)
-    //      },
-    //     (         error: { errorMessage: any; })=>{
-    //         console.log('Some error occured');
-    //         console.log(error.errorMessage);
-    //      }
-    //   )
+    
   
 
 }
